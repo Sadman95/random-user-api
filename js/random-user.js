@@ -1,7 +1,7 @@
 const randomBuddies = () => {
     fetch('https://randomuser.me/api/?results=10')
     .then(res => res.json())
-    .then(data => loadBuddies(data))
+    .then(info => loadBuddies(info))
 }
 randomBuddies();
 const loadBuddies = buddies => {
